@@ -55,19 +55,8 @@ $("#number-people").change(function(){
     numberOfPeople = parseInt($("#number-people").val());
     document.getElementById("zero").style.display = "none";
 });
-$("#calculate-button").click(function(){
-    if (!numberOfPeople) {
-        document.getElementById("zero").style.display = "inherit";
-    }else if (billValue) {
-        var tipPerPerson = ((billValue * (Tip/100)) / numberOfPeople);
-        var totalPerPerson = tipPerPerson + (billValue / numberOfPeople);
-        document.getElementById("tip-val").innerHTML = "$" + ((tipPerPerson.toFixed(2)).toString());
-        document.getElementById("total-val").innerHTML = "$" + ((totalPerPerson.toFixed(2)).toString());
-    }
-})
 $("#Reset-button").click(function() {
     document.getElementById("number-people").value="";
-    document.getElementById("custom-tip").value="";
     Tip=0;
     billValue=0;
     document.getElementById("tip-val").innerHTML="$0.00";
@@ -80,4 +69,13 @@ $("#Reset-button").click(function() {
     $("#button50").removeClass("selected");
     document.getElementById("zero").style.display = "none";
 });
-
+$("#calculate-button").click(function(){
+    if (!numberOfPeople) {
+        document.getElementById("zero").style.display = "inherit";
+    }else if (billValue) {
+        var tipPerPerson = ((billValue * (Tip/100)) / numberOfPeople);
+        var totalPerPerson = tipPerPerson + (billValue / numberOfPeople);
+        document.getElementById("tip-val").innerHTML = "$" + ((tipPerPerson.toFixed(2)).toString());
+        document.getElementById("total-val").innerHTML = "$" + ((totalPerPerson.toFixed(2)).toString());
+    }
+})
