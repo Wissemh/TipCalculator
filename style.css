@@ -2,7 +2,7 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Space Mono', monospace;
     box-sizing: border-box;
 }
 body {
@@ -16,14 +16,13 @@ header {
     color: #00474B;
     padding: 3em;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     white-space: pre-line;
 }
 .container
 {
     background-color: white;
     width: 670px;
-    height: 275px;
     left: 20%;
     right: 20%;    
     display: flex;

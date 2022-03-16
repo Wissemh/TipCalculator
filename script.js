@@ -57,11 +57,10 @@ $("#number-people").change(function(){
 });
 $("#Reset-button").click(function() {
     document.getElementById("number-people").value="";
-    Tip=0;
-    billValue=0;
     document.getElementById("tip-val").innerHTML="$0.00";
     document.getElementById("total-val").innerHTML="$0.00";
     document.getElementById("total-val").innerHTML="$0.00";
+    document.getElementById("Bill-value").value="";
     $("#button5").removeClass("selected");
     $("#button10").removeClass("selected");
     $("#button15").removeClass("selected");
