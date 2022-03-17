@@ -56,13 +56,14 @@ $("#number-people").change(function(){
     document.getElementById("zero").style.display = "none";
 });
 $("#Reset-button").click(function() {
+    billValue=0;
+    document.getElementById("custom-tip").value="";
     document.getElementById("number-people").value="";
     document.getElementById("tip-val").innerHTML="$0.00";
     document.getElementById("total-val").innerHTML="$0.00";
-    document.getElementById("total-val").innerHTML="$0.00";
     document.getElementById("Bill-value").value="";
     $("#button5").removeClass("selected");
-    $("#button10").removeClass("selected");
+    $("#button10").removeClass("selected"); 
     $("#button15").removeClass("selected");
     $("#button25").removeClass("selected");
     $("#button50").removeClass("selected");
