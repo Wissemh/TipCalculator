@@ -199,12 +199,12 @@ button:hover {
 
     .container {
         flex-direction: column;
-        justify-content: space-between;
         height: 113vh;
         width: 100%;
         margin: 0;
         border: 1px white;
-        padding: 3vh;
+        padding: 2vh;
+        justify-content: normal;
     }
 
     .People {
